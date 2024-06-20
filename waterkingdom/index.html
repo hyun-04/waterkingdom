@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>파크하비오 워터킹덤&스파</title>
+    <!-- jquery 라이브러리 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- 내가 작성한 css -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 내가 작성한 script -->
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="inner">
+            <div class="row-top">
+                <h1 class="logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="워터킹덤">
+                    </a>
+                </h1>
+                <div class="util">
+                    <button type="button" class="btn-sch"><img src="images/ico_search.svg" alt="검색"></button>
+                    <a href="#" class="login"><img src="images/ico_user.svg" alt="로그인"></a>
+                </div>
+            </div>
+
+            <div class="row-bottom">
+                <nav>
+                    <ul id="gnb">
+                        <li>
+                            <a href="#" class="dep1">워터킹덤</a>
+                            <ul class="dep2">
+                                <li><a href="#">워터킹덤 소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">시설안내</a>
+                            <ul class="dep2">
+                                <li><a href="#">실내워터파크</a></li>
+                                <li><a href="#">찜질방</a></li>
+                                <li><a href="#">편의시설</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">이용안내</a>
+                            <ul class="dep2">
+                                <li><a href="#">이용시간&amp;요금</a></li>
+                                <li><a href="#">이용방법</a></li>
+                                <li><a href="#">대여안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">할인·이벤트</a>
+                            <ul class="dep2">
+                                <li><a href="#">할인안내</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">예약</a>
+                            <ul class="dep2">
+                                <li><a href="#">예약하기</a></li>
+                                <li><a href="#">예약확인·취소</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dep1">고객센터</a>
+                            <ul class="dep2">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">자주묻는질문</a></li>
+                                <li><a href="#">온라인문의</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+                <button class="btn-reser btn-type-a">바로예약</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-slide-wrap">
+        <!-- Slider main container -->
+        <div class="swiper" id="mainSlide">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="images/main-slide.png" alt="슬라이드이미지"></div>
+                <div class="swiper-slide"><img src="images/main-slide.png" alt="슬라이드이미지"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination paging"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev btn-prev"></div>
+            <div class="swiper-button-next btn-next"></div>
+        </div>
+
+        </div>
+        <div class="quick">
+            <ul>
+                <li><a href="#">
+                        <span class="ico-box"></span>
+                        <span class="txt-box">오시는길</span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="ico-box"></span>
+                        <span class="txt-box">이용요금</span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="ico-box"></span>
+                        <span class="txt-box">대여안내</span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="ico-box"></span>
+                        <span class="txt-box">푸드&amp;스낵</span>
+                    </a></li>
+                <li><a href="#">
+                        <span class="ico-box"></span>
+                        <span class="txt-box">의무실</span>
+                    </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="sec1" class="sec">
+        <div class="inner">
+            <h2>워터킹덤 즐기기</h2>
+            <ul class="tab-menu">
+                <li><a href="#tab-con1">워터킹덤</a></li>
+                <li><a href="#tab-con2">찜질방</a></li>
+            </ul>
+            <div class="tab-con-wrap">
+                <div class="wrap" id="tab-con1">
+                    <span class="img-box">
+                        <img src="images/section1-img.png" alt="이미지">
+                    </span>
+                    <div class="cont-box">
+                        <h3>365일 실내워터파크</h3>
+                        <p>
+                            궂은 날씨에도 가족 나들이로 딱!<br>
+                            워터킹덤 워터파크에서 안전하고<br>
+                            행복한 물놀이를 즐겨보세요.
+                        </p>
+                        <div class="links">
+                            <a href="#">시설안내</a>
+                            <a href="#">요금안내</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap" id="tab-con2">
+                    <span class="img-box">
+                        <img src="images/section2.jpg" alt="이미지">
+                    </span>
+                    <div class="cont-box">
+                        <h3>휴식과 여유의 시간</h3>
+                        <p>
+                            사우나에 찜질까지 하면 개운함이 두 배!<br>
+                            워터킹덤 찜질방에서 편안하고<br>
+                            여유로운 시간을 만나보세요.
+                        </p>
+                        <div class="links">
+                            <a href="#">시설안내</a>
+                            <a href="#">요금안내</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec2" class="sec">
+        <div class="inner">
+            <h2>워터킹덤 알림·소식</h2>
+            <div class="col-lft">
+                <ul>
+                    <li>
+                        <a href="#">워터킹덤 휴장일 공지</a>
+                        <span class="date">2024.03.21</span>
+                    </li>
+                    <li>
+                        <a href="#">더클락 운영안내</a>
+                        <span class="date">2024.03.21</span>
+                    </li>
+                    <li>
+                        <a href="#">워터킹덤 극성수기 입장제한</a>
+                        <span class="date">2024.03.21</span>
+                    </li>
+                    <li>
+                        <a href="#">7월 휴장일 없이 정상운영</a>
+                        <span class="date">2024.03.21</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-rgt"><a href="#"><img src="images/banner-img1.png" alt="워터킹덤클린데이"></a></div>
+        </div>
+    </section>
+    <section id="sec3" class="sec">
+        <div class="inner">
+            <h2>워터킹덤 운영안내</h2>
+            <div class="col-lft2 col">
+                <h3>워터파크</h3>
+                <div class="cont">
+                    <p>주중·주말·공휴일</p>
+                    <ul>
+                        <li>
+                            <span>종일권</span>
+                            <strong>10:00~18:00</strong>
+                        </li>
+                        <li>
+                            <span>반일권</span>
+                            <strong>13:00~18:00</strong>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-rgt2 col">
+                <h3>찜질 스파</h3>
+                <div class="cont">
+                    <p>주중·주말·공휴일</p>
+                    <strong>13:00~18:00</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="inner">
+            <div class="row-top">
+                <div class="foot-link">
+                    <a href="#">워터킹덤 소개</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이메일무단수집거부</a>
+                    <a href="#">사이트맵</a>
+                </div>
+            </div>
+            <div class="row-bottom">
+                <div class="foot-info">
+                    <address>㈜다함하비오 | 대표이사 : 안성수 | 사업자등록번호 : 119-86-44529<br>
+                        주소 : 서울특별시 송파구 송파대로 111, 파크하비오 202동 | TEL : 1600-0666 | FAX : 02-543-2909</address>
+                    <p class="copy">Copyright &copy; 2017 ㈜다함하비오. All rights reserved.</p>
+                </div>
+                <div class="foot-logo">
+                    <img src="images/foot-logo1.png" alt="파크하비오">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

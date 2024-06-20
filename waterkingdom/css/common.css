@@ -1,0 +1,150 @@
+/* 프리텐다드 폰트 로드, 설정 */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body{font-family: Pretendard; font-size: 16px; line-height: 1.4; color: #303030;}
+
+/* 초기화 */
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,dl,dt,dd,p,form,fieldset,button{margin: 0; padding: 0;}
+h1,h2,h3,h4,h5,h6{font-size: 1em; line-height: 1em;}
+ol,ul{list-style: none;}
+a{text-decoration: none; color: #303030;}
+img{vertical-align: middle;}
+address{font-style: normal;}
+
+/* ============================== 레이아웃 ============================== */
+
+/* -----------공통------------ */
+.inner{width: 1400px; margin: 0 auto;}
+button{cursor: pointer;}
+.btn-type-a{}
+.row-top{position: relative; }
+.row-bottom::after{content: ""; display: block; clear: both;}
+
+/* ============================== 헤더영역 ============================== */
+
+/*---헤더 상단---*/
+#header{position: fixed; left: 0; top: 0; z-index: 9999; width: 100%; background: white;}
+.util{position: absolute; right:0; top:50%; transform: translateY(-50%);}
+.util .btn-sch{background: transparent; border: 0; margin-right: 20px;}
+/*---헤더 하단---*/
+nav{float: left;}
+nav #gnb{ font-size: 0;}
+#gnb > li{display: inline-block; font-size: 20px; position: relative; padding:0 32px 0 20px;}
+#gnb > li+li{margin-left: 60px;}
+#gnb > li .dep1{display: block; line-height: 80px; position: relative;}
+#gnb > li::before{content: ""; width: 11px; height: 7px; background: url(../images/ico_arrow.svg) no-repeat 0 0; position: absolute; right: 10px; top:50%; transform: translateY(-50%); transition: all 0.1s ease-in;}
+#gnb > li:hover::before{display: block; transform: translateY(-50%) rotate(-180deg);}
+#gnb > li .dep1::after{content: "";width: 0; height: 3px; background-color: #3074F6; position: absolute; left:50%; bottom:0; transform: translateX(-50%); transition: width 0.2s ease-in;}
+#gnb > li .dep1:hover::after{display: block; width: 100%;}
+.btn-reser{float: right; background: #3074F6; border: 0; border-radius: 7px; font-size: 20px; color:white; font-weight: 500; line-height: 1; width: 230px; height: 60px; font-family: Pretendard; margin-top: 10px;}
+/*---서브메뉴---*/        
+#gnb > li .dep2{position: absolute; left: 50%; top:80px; transform: translateX(-50%); background: rgb(255, 255, 255);  width: 200px; padding: 45px; box-sizing: border-box; border-radius: 0 0 30px 30px; box-shadow: 2px 4px 6px 0 rgba(0,0,0,0.25); display: none;}
+#gnb > li .dep2.show{display: block;}        
+#gnb > li .dep2 li+li{margin-top: 15px;}
+#gnb > li .dep2 li a{font-size: 16px; display: block;} 
+#gnb > li .dep2 li a:hover{color: #3074F6; }
+
+
+/* ============================== 메인비주얼영역 ============================== */
+.main-slide-wrap{position: relative; padding-top: 150px;}
+.quick{ position: absolute; left: 50%; bottom: 200px; transform: translateX(-50%); z-index: 100; }
+
+
+.quick ul li{float: left;}
+.quick ul li+li{margin-left: 50px;}
+.quick ul li a{display: block; text-align: center;}
+.quick ul li a .ico-box{display: block; width: 120px; height: 120px; border-radius: 30px;}
+.quick ul li:nth-child(1) a .ico-box{background: white url(../images/ico_quick1.svg) no-repeat 50% 50%;}
+.quick ul li:nth-child(2) a .ico-box{background: white url(../images/ico_quick2.svg) no-repeat 50% 50%;}
+.quick ul li:nth-child(3) a .ico-box{background: white url(../images/ico_quick3.svg) no-repeat 50% 50%;}
+.quick ul li:nth-child(4) a .ico-box{background: white url(../images/ico_quick4.svg) no-repeat 50% 50%;}
+.quick ul li:nth-child(5) a .ico-box{background: white url(../images/ico_quick5.svg) no-repeat 50% 50%;}
+
+/* .main-slide-wrap .quick ul li a .ico-box img{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);} */
+.quick ul li a .txt-box{display: block; margin-top: 20px; font-size: 24px; color: white; font-weight: 600; line-height: 1em;}
+
+
+/* ============================== 섹션 공통 ==============================*/
+
+.sec .inner{ padding-top: 120px; padding-bottom: 160px; box-sizing: border-box; overflow: hidden;}
+.sec h2{font-size: 52px; font-weight: 400;text-align: center; margin-bottom: 80px;}
+
+/* ============================== 섹션1 즐기기 영역 ==============================*/ 
+
+#sec1{background: url(../images/bg-section1.png) no-repeat center top; background-size: cover;}
+#sec1 .inner{position: relative; height: 873px;}
+#sec1 ul{ width: 330px; margin: 0 auto 40px auto; overflow: hidden;}
+#sec1 ul li{float: left;}
+#sec1 ul li + li{padding-left: 10px;}
+#sec1 ul li a{display: block; width: 160px; border: 2px solid #C1C0C0; border-bottom: 0; box-sizing: border-box; border-radius: 10px 10px 0 0; text-align: center; line-height: 48px; font-size: 18px; font-weight: 500; }
+#sec1 ul li a.on{border-color: #3074F6; color: #3074F6;}
+#sec1 .tab-con-wrap{height: 280px; position: relative;}
+#sec1 .wrap{
+    background: rgba(255, 255, 255,1); width: 990px; margin: 0 auto; overflow: hidden;
+    position: absolute; left: 50%; top: 0; transform: translateX(-50%); 
+}
+
+#sec1 .wrap .img-box{float: left;}
+#sec1 .wrap .cont-box{float: left; width: 400px; margin-left: 70px; margin-top: 100px;}
+#sec1 .wrap .cont-box h3{font-size: 28px; margin-bottom: 20px;}
+#sec1 .wrap .cont-box p{font-size: 16px; margin-bottom: 40px;}
+#sec1 .wrap .cont-box .links a{display: inline-block; padding: 10px 20px; border-radius: 4px;background: #3074F6; color: #fff; line-height: 1em; font-weight: 500;margin-right: 14px;}
+
+/* ============================== 섹션2 알림소식 영역 ==============================*/
+
+#sec2 .inner{overflow: hidden; }
+#sec2 .col-lft{float: left; width: 680px;}
+#sec2 .col-lft ul{border-top: 3px solid #3074F6; border-bottom: 3px solid #3074F6;}
+#sec2 .col-lft ul li{position: relative; border-bottom: 1px solid #787878; padding: 33px 0;}
+#sec2 .col-lft ul li:nth-last-child{border-bottom: 0;}
+#sec2 .col-lft ul li a{display: block; width: 580px; font-size: 18px;padding-right: 80px; padding-left: 16px; box-sizing: border-box; line-height: 36px; position: relative;}
+#sec2 .col-lft ul li a::before{content: ""; width: 6px; height: 6px; background: #3074F6; border-radius: 5px; position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+#sec2 .col-lft ul li .date{position: absolute; right:0;top: 50%; transform: translateY(-50%);  font-size: 16px;}
+
+
+#sec2 .col-rgt{float: right; width: 680px;}
+
+
+/* ============================== 섹션3 운영안내 영역 ============================== */
+#sec3{background: url(../images/bg-sec3.png) no-repeat 50% top; color: white;}
+/* #sec3 > .inner{overflow: hidden;} */
+
+/* -- 운영안내 공통 -- */
+#sec3 .inner h3{font-size: 28px; font-weight: 500; text-align: center; padding-top: 30px;}
+#sec3 .inner .col{ width: 680px; height: 270px; border: 3px solid white; text-align: center;}
+
+/* -- 왼쪽 영역 -- */
+#sec3 .inner .col-lft2{float: left;}
+#sec3 .inner .col-lft2 .cont{font-size: 18px; margin-top: 50px; display: inline-block; padding-left: 160px; position: relative;}
+#sec3 .inner .col-lft2 .cont p{position: absolute; left: 0; top: 50%; transform: translateY(-50%);}
+#sec3 .inner .col-lft2 .cont ul li+li{margin-top: 30px;}
+#sec3 .inner .col-lft2 .cont ul li span{padding: 10px 15px; border-radius: 30px;}
+#sec3 .inner .col-lft2 .cont ul li:nth-child(1) span{background-color: #FF5C5C;}
+#sec3 .inner .col-lft2 .cont ul li:nth-child(2) span{background-color: #6430F6;}
+#sec3 .inner .col-lft2 .cont ul li strong{font-weight: 400; margin-left: 32px;}
+
+/* -- 오른쪽 영역 -- */
+#sec3 .inner .col-rgt2{float:right ; width: 680px; height: 270px; border: 3px solid white;}
+#sec3 .inner .col-rgt2 .cont{font-size: 18px; margin-top: 70px; display: inline-block;position: relative;}
+#sec3 .inner .col-rgt2 .cont p{display: inline-block; margin-right: 130px;}
+#sec3 .inner .col-rgt2 .cont strong{font-weight: 400;}
+
+
+
+
+/* ============================== 푸터 영역 ============================== */
+
+footer .row-top{border-bottom: 1px solid #787878;}
+
+footer .foot-link{padding: 20px 0;}
+footer .foot-link a{display: inline-block; padding: 10px 30px 10px 0px ; position: relative;}
+footer .foot-link a::before{content: ""; position: absolute; right: 0; top:50%; transform: translateY(-50%); width: 1px; background-color: #787878; height: 12px;}
+footer .foot-link a:last-child::before{display: none;}
+footer .foot-link a+a{margin-left: 30px;}
+
+
+footer .foot-info{padding-top: 40px;}
+footer .foot-info .copy{color: #787878; margin-top: 10px;}
+
+footer .row-bottom{position: relative; padding-bottom: 138px;}
+footer .foot-logo{position: absolute; right:0; top: 10px;}
